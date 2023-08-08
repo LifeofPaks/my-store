@@ -29,6 +29,10 @@
                 cursor: pointer;
                 transition: .3s;
 
+                span{
+                    font-size: 13px;
+                }
+
                 &:hover{
                     opacity: .7;
                 }

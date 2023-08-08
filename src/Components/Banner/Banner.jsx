@@ -30,9 +30,9 @@ const Banner = () => {
     Banner11,
   ];
 
-  useEffect(() => {
-      setCurrentSlide(0);
-    }, []);
+  // useEffect(() => {
+  //     setCurrentSlide(0);
+  //   }, []);
 
   const slideLength = banners.length;
 
@@ -44,19 +44,19 @@ const Banner = () => {
     setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
   };
 
-  const autoScroll = true;
-  let slideInterval;
-  let intervalTime = 5000;
+  // const autoScroll = true;
+  // let slideInterval;
+  // let intervalTime = 5000;
 
-  const beginAutoScroll = () => {
-    slideInterval = setInterval(nextSlide, intervalTime);
-  };
+  // const beginAutoScroll = () => {
+  //   slideInterval = setInterval(nextSlide, intervalTime);
+  // };
 
-  useEffect(() => {
-    if (autoScroll) {
-      beginAutoScroll();
-    }
-  }, [currentSlide]);
+  // useEffect(() => {
+  //   if (autoScroll) {
+  //     beginAutoScroll();
+  //   }
+  // }, [currentSlide]);
 
   return (
     <div className="slider">

@@ -16,11 +16,11 @@
 
         .item{
             width: 300px;
-            height: 350px;
-            cursor: pointer;
+            height: 400px;
             padding: 1rem;
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
             border-radius: 1rem;
+            position: relative;
 
             .imgWrapper{
                 width: 100%;
@@ -29,6 +29,7 @@
                 align-items: center;
                 justify-content: center;
                 position: relative;
+                
 
                 img{
                     width: 100%;
@@ -43,6 +44,7 @@
                 &:hover{
                     .hover{
                         opacity: 1;
+                        transform: scale(1.13);
                     }
 
                     .default{
@@ -50,6 +52,59 @@
                     }
                 }
             }
+
+            .productInfo{
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+                left: 0;
+                padding-inline: 1rem;
+
+                p{
+                    font-size: 14px;
+                    font-weight: 200;
+                  
+                }
+
+                span{
+                    margin-right: 1rem;
+                    font-size: 13px;
+
+                    &.then{
+                        opacity: .4;
+                    }
+                }
+            }
+
+            .actions{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                top: 1rem;
+                right: 1rem;
+
+                img{
+                    cursor: pointer;
+                    transition: .3s;
+
+                    &:hover{
+                        opacity: .5;
+                    }
+                }
+
+                .rating{
+                    display: flex;
+                    align-items: center;
+                    gap: .2rem;
+                    margin-top: .5rem;
+
+                    img{
+                        width: 18px;
+                    }
+                }
+            }
+        
         }
     }
 }

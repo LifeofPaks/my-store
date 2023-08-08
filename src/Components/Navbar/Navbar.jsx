@@ -9,7 +9,7 @@ import Favorite from "../../assets/images/icons8-favorite-50.png";
 import Scale from "../../assets/images/icons8-scale-50.png";
 import Flag from "../../assets/images/icons8-usa-flag-48.png";
 import PS5 from "../../assets/images/icons8-ps-5-48.png";
-import Playstation from "../../assets/images/icons8-playstation-60.png"
+import Playstation from "../../assets/images/icons8-playstation-60.png";
 import Apple from "../../assets/images/icons8-apple-60.png";
 import Others from "../../assets/images/icons8-multiple-devices-52.png";
 import { Link } from "react-router-dom";
@@ -20,18 +20,18 @@ const Navbar = () => {
       <div className="wrapper">
         <div className="left">
           <div className="item">
-            <img src={Flag} alt="flag" className="flag"/>
-            <img src={ArrowDown} alt="arrow" className="arrow"/>
+            <img src={Flag} alt="flag" className="flag" />
+            <img src={ArrowDown} alt="arrow" className="arrow" />
           </div>
 
           <div className="item">
             <span>USD</span>
-            <img src={ArrowDown} alt="arrow" className="arrow"/>
+            <img src={ArrowDown} alt="arrow" className="arrow" />
           </div>
 
           <div className="item">
             <Link to="/products/1">
-              <img src={Playstation} alt="PS5" className="ps5"/>
+              <img src={Playstation} alt="PS5" className="ps5" />
               Play Station
             </Link>
           </div>
@@ -62,9 +62,9 @@ const Navbar = () => {
 
         <div className="right">
           <Link to="/"> Home</Link>
-          <Link to="/"> About</Link>
-          <Link to="/"> Contact</Link>
-          <Link to="/"> Stores</Link>
+          <a href="#footer">About</a>
+          <a href="#footer">Contact</a>
+          <a href="#footer">Store</a>
           <img src={Search} alt="Others" />
           <img src={User} alt="Others" />
           <img src={Favorite} alt="Others" />

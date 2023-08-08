@@ -105,7 +105,78 @@ export const featureData = [
     },
 ]
 
-export const productList =[
-    
+export const Explore =[
+    {
+        id: 1,
+        defaultImg: 'https://nigeriantech.com.ng/wp-content/uploads/2023/02/Best-Harman-Kardon-Onyx-Studio-7-Price-in-Nigeria-Nigeriantech.com_.ng_.jpeg',
+        hoverImg: 'https://i5.walmartimages.com/asr/a3820d06-04fe-41e3-ae7a-bd13edc5a9c9.6b19fb62d6b20eff21ff42062b51c4ec.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF',
+        title: 'Harman Kardon ONYX Studio 7',
+        then: '399.99',
+        now: '249.99',
+    },
+
+    {
+        id: 2,
+        defaultImg: 'https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g502-lightspeed-gaming-mouse/g502-lightspeed-gallery-1.png?v=1',
+        hoverImg: 'https://resource.logitechg.com/w_386,ar_1.0,c_limit,f_auto,q_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/g402/gallery-1.png?v=1',
+        title: 'Logitech G502 LIGHTSPEED Wireless Gaming Mouse',
+        then: '199.99',
+        now: '149.99',
+    },
+
+    {
+        id: 3,
+        defaultImg: 'https://down-my.img.susercontent.com/file/sg-11134201-23020-rj6y1w5qobnv2b',
+        hoverImg: 'https://cf.shopee.co.id/file/c46d13c892309c9d64558170063909c9',
+        title: 'GIGABYTE AORUS CV27Q - 27" 165Hz QHD 1440P 1500R FreeSync Gaming Monitor',
+        then: '699.99',
+        now: '649.99',
+    },
+
+    {
+        id: 4,
+        defaultImg: 'https://media.croma.com/image/upload/v1689920121/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/274272_7_v6uxpv.png',
+        hoverImg: 'https://smhttp-ssl-73217.nexcesscdn.net/pub/media/catalog/product/cache/661473ab953cdcdf4c3b607144109b90/s/p/sp609-1-min.jpg',
+        title: 'JBL Boombox 3',
+        then: '399.99',
+        now: '249.99',
+    },
+
+    {
+        id: 5,
+        defaultImg: 'https://www.lcegroup.co.uk/NewProductImages1/14759.jpg',
+        hoverImg: 'https://www.samys.com/imagesproc/L2ltYWdlcy9wcm9kdWN0L21haW4vUy0wMzU4NjB4MTAwMF83LmpwZw==_H_SH480_MW480.jpg',
+        title: 'Sony Alpha a7II Mirrorless Digital Camera with FE 28-70mm f/3.5-5.6 OSS Lens',
+        then: '1,603.30',
+        now: '998.00',
+    },
+
+    {
+        id: 6,
+        defaultImg: 'https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/systems_5/nintendo_switch_3/not_approved_1/NSwitch_ws_NintendoSwitch.png',
+        hoverImg: 'https://content.fortune.com/wp-content/uploads/2017/02/nintendo_switch_console_2.jpg?w=840',
+        title: 'Nintendo Switch',
+        then: '279.99',
+        now: '239.99',
+    },
+
+    {
+        id: 7,
+        defaultImg: 'https://txz27ptd.tinifycdn.com/Content/product_images/SDR50.png',
+        hoverImg: 'https://pngimg.com/d/dumbbell_PNG16384.png',
+        title: 'Dumbell',
+        then: '189.99',
+        now: '129.99',
+    },
+
+    {
+        id: 8,
+        defaultImg: 'https://www.kindpng.com/picc/m/547-5471029_beats-headphones-box-png-transparent-png.png',
+        hoverImg: 'https://s.yimg.com/uu/api/res/1.2/HM557_M8GJBr.f.xd2rsDg--~B/Zmk9ZmlsbDtoPTU4Mzt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2023-06/0bf857b0-167a-11ee-bea1-3f1e3178b6d7.cf.jpg',
+        title: 'Beats By Dre Headset',
+        then: '399.99',
+        now: '249.99',
+    },
+
 ]
 
