@@ -1,0 +1,138 @@
+@import '../../Styles//Variables.scss';
+
+.navbar{
+    padding: 10px 3%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    background: $white;
+    z-index: 10;
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 15px;
+        font-weight: 500;
+        color: $dark1;
+
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+
+            .item{
+                display: flex;
+                align-items: center;
+                gap: .2rem;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover{
+                    opacity: .7;
+                }
+                
+
+                .flag{
+                    width: 20px;
+                }
+
+                .arrow{
+                    width: 11px;
+                }
+
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    gap: .2rem;
+
+                    img{
+                        width: 18px;
+                    }
+
+                    .ps5{
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        .center{
+            
+            a{
+                display: flex;
+                align-items: center;
+                gap: .2rem;
+
+                img{
+                    width: 30px;
+                }
+
+                h1{
+                    font-size: 18px;
+                    span{
+                        font-family: 'Clicker Script', cursive;
+                        font-size: 20px;
+                        color: #3184D7;
+                    }
+                }
+            }
+           
+        }
+
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            a{
+                position: relative;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    background: #000;
+                    bottom: -3px;
+                    opacity: 0;
+                    transition: .3s;
+                    left: 50%;
+                }
+
+                &:hover::before{
+                    width: 100%;
+                    opacity: 1;
+                    left: 0;
+                }
+            }
+
+            img{
+                width: 20px;
+                cursor: pointer;
+            }
+
+            .cartWrapper{
+                position: relative;
+
+                span{
+                    position: absolute;
+                    top: -6px;
+                    right: -6px;
+                    background: red;
+                    width: 14px;
+                    height: 14px;
+                    color: $white;
+                    font-size: 10px;
+                    border-radius: 50%;
+                    display: grid;
+                    place-content: center;
+                }
+            }
+        }
+    }
+}

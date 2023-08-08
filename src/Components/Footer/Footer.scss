@@ -1,0 +1,172 @@
+@import '../../Styles//Variables.scss';
+
+.footer{
+    padding-inline: 3%;
+    background: $black;
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+
+    .top{
+        display: flex;  
+        justify-content: space-between;
+        border-bottom: .5px  solid $border;
+        padding-block: 2rem;
+
+        .col{
+
+            h2{
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 1px;
+                margin-bottom: 1rem;
+            }
+
+            a{
+                cursor: pointer;
+                font-size: 12px;
+                margin-bottom: 0.3rem;
+                color: rgb(202, 202, 202);
+                display: block;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            .newsletter{
+                p{
+                    font-size: 13px;
+                }
+
+                .inputWrapper{
+
+                    margin-bottom: 1rem;
+                    .input{
+                        display: flex;
+                        align-items: center;
+                        margin-block: 1rem;
+                        max-width: 300px;
+                        input{
+                            background: $white;
+                            width: 100%;
+                            padding: .8rem 1rem ;
+                        }
+
+                        button{
+                            background: #3184D7;
+                            padding: .6rem 1rem ;
+
+                            img{
+                                width: 20px;
+                            }
+                        }
+                    }
+
+                    .terms{
+                        display: flex;
+                        align-items: center;
+                        gap: 0.3rem;
+
+                        p{
+                            font-size: 11px;
+                            display: flex;
+                            align-items: center;
+                            gap: 0.3rem;
+    
+
+                            a{
+                                color: #3184D7;
+                                text-decoration: underline;
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .followUS{
+            h2{
+                width: 100%;
+                text-align: center;
+            }
+            .wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                width: 100%;
+    
+                img{
+                    width: 20px;
+                    cursor: pointer;
+                    transition: .3s;
+    
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+
+            .download{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                img{
+                    width: 120px;
+                    margin-top: 1rem;
+                }
+            }
+          
+        }
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        .center{
+
+            a{
+                display: flex;
+                align-items: center;
+                gap: .2rem;
+
+                img{
+                    width: 30px;
+                }
+
+                h1{
+                    font-size: 18px;
+                    color: $white;
+                    span{
+                        font-family: 'Clicker Script', cursive;
+                        font-size: 20px;
+                        color: #3184D7;
+                    }
+                }
+            }
+           
+        }
+
+        .payment{
+
+            img{
+                width: 300px;
+                background: $white;
+                padding-inline: 1rem;
+            }
+        }
+    }
+
+    .copyright{
+        width: 100%;
+        color: $white;
+        font-size: 10px;
+
+    }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=REM:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "animate.css";
+@import '../src/Styles/Variables.scss';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Clicker Script', cursive;
+    font-family: 'REM', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+input, button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    flex: 1;
+}
+
