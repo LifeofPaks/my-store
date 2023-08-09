@@ -1,6 +1,5 @@
 import React from "react";
 import "./Feature.scss";
-import { featureInfoData } from "../../Helpers/Data";
 import { featureData } from "../../Helpers/Data";
 
 const Feature = () => {

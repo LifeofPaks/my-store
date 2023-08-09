@@ -1,16 +1,15 @@
-import React from "react";
-import "./AllCategories.scss";
+import React from 'react'
 import { Explore } from "../../Helpers/Data";
 import { Link } from "react-router-dom";
 import Star from "../../assets/images/icons8-star-48.png";
+import './SimilarItem.scss'
 
-const AllCategories = () => {
-
+const SimilarItem = () => {
   return (
-    <div className="explore">
-      <h1>Explore...</h1>
-      <div className="wrapper">
-        {Explore.map((data) => (
+    <div className='similarItem'>
+        <h2>Similar itmes you may like</h2>
+        <div className="Xwrapper">
+        {Explore.slice(0,5).map((data) => (
           <Link to={`/products/${data.id}`} className="item" key={data.id}>
             <div className="imgWrapper">
               <img src={data.defaultImg} alt="image" className="default" />
@@ -47,8 +46,9 @@ const AllCategories = () => {
           </Link>
         ))}
       </div>
-    </div>
-  );
-};
 
-export default AllCategories;
+    </div>
+  )
+}
+
+export default SimilarItem

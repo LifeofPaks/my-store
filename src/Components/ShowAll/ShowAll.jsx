@@ -20,8 +20,8 @@ const ShowAll = () => {
 
             <div className="productInfo">
               <p>{data.title}</p>
-              <span className="then">${data.then}</span>
               <span className="now">${data.now}</span>
+              <span className="then">${data.then}</span>
 
               <div className="rating">
                 <img src={Star} alt="star" />
