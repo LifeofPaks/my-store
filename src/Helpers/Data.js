@@ -229,7 +229,7 @@ export const allCategory = [
   },
 
   {
-    id: 16,
+    id: 3,
     defaultImg:
       "https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g502-lightspeed-gaming-mouse/g502-lightspeed-gallery-1.png?v=1",
     hoverImg:
@@ -250,7 +250,7 @@ export const allCategory = [
   },
 
   {
-    id: 3,
+    id: 16,
     defaultImg:
       "https://media.croma.com/image/upload/v1689920121/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/274272_7_v6uxpv.png",
     hoverImg:
@@ -298,16 +298,6 @@ export const allCategory = [
     hoverImg:
       "https://s.yimg.com/uu/api/res/1.2/HM557_M8GJBr.f.xd2rsDg--~B/Zmk9ZmlsbDtoPTU4Mzt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2023-06/0bf857b0-167a-11ee-bea1-3f1e3178b6d7.cf.jpg",
     title: "Beats By Dre Headset",
-    then: "399.99",
-    now: "249.99",
-  },
-
-  {
-    id: 9,
-    defaultImg: Feature2,
-    hoverImg:
-      "https://blog.playstation.com/tachyon/2053/01/2bc04c3f8d548a11ef6b82562ffd8cebfdd32219-scaled.jpg?resize=1088%2C612&crop_strategy=smart",
-    title: "DualSense Edge",
     then: "399.99",
     now: "249.99",
   },

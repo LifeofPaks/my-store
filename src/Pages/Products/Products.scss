@@ -10,9 +10,14 @@
 
     .sidebar{
         width: 200px;
+        height: 100%;
+        position: sticky;
+        top: 70px;
 
         .item{
             margin-bottom: 1rem;
+            padding-bottom: .5rem;
+            border-bottom: .5px solid #4343433e;
 
             h2{
                 font-size: 18px;

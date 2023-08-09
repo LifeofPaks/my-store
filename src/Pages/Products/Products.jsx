@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Products.scss";
 import Loader from "react-loaders";
 import Banner6 from "../../assets/images/iwatchBanner.jpeg";
 import ShowAll from "../../Components/ShowAll/ShowAll";
+import { useParams } from "react-router-dom";
 
 
 const Products = () => {
+  const [maxPrice, setMaxPrice] = useState(1000)
+  const param = useParams()
+
+
   return (
     <>
       <div className="products">
@@ -32,8 +37,8 @@ const Products = () => {
             <h2>Filter By Price</h2>
             <div className="wrapper">
               <span>0</span>
-                <input type="range" min={0} max={1000} />
-              <span>1000</span>
+                <input type="range" min={0} max={1000} onChange={e=>setMaxPrice(e.target.value)}/>
+              <span>{maxPrice}</span>
             </div>
           </div>
 

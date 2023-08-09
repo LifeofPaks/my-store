@@ -6,7 +6,6 @@ import Cart from "../../assets/images/icons8-cart-50.png";
 import Search from "../../assets/images/icons8-search-50.png";
 import User from "../../assets/images/icons8-user-32.png";
 import Favorite from "../../assets/images/icons8-favorite-50.png";
-import Scale from "../../assets/images/icons8-scale-50.png";
 import Flag from "../../assets/images/icons8-usa-flag-48.png";
 import PS5 from "../../assets/images/icons8-ps-5-48.png";
 import Playstation from "../../assets/images/icons8-playstation-60.png";
