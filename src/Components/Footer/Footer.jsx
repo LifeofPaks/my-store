@@ -6,8 +6,9 @@ import Send from '../../assets/images/send.png'
 import Facebook from '../../assets/images/icons8-facebook-50.png'
 import Twitter from '../../assets/images/icons8-twitter-50.png'
 import Instagram from '../../assets/images/icons8-instagram-old-50.png'
-import LinkedIn from '../../assets/images/icons8-linkedin-50.png'
 import Youtube from '../../assets/images/icons8-youtube-50.png'
+import GooglePlus from '../../assets/images/icons8-google-plus-50.png'
+import Pinterest from '../../assets/images/icons8-pinterest-50.png'
 import Googleplay from '../../assets/images/Googleplay.png'
 import AppStore from '../../assets/images/AppStore.png'
 import { Link } from 'react-router-dom'
@@ -53,8 +54,9 @@ const Footer = () => {
                 <img src={Facebook} alt="socials" />
                 <img src={Twitter} alt="socials" />
                 <img src={Instagram} alt="socials" />
-                <img src={LinkedIn} alt="socials" />
                 <img src={Youtube} alt="socials" />
+                <img src={GooglePlus} alt="socials" />
+                <img src={Pinterest} alt="socials" />
               </div>
               <div className="download">
                 <img src={Googleplay} alt="download" />

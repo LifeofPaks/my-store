@@ -1,16 +1,16 @@
 import React from "react";
-import "./AllCategories.scss";
-import { Explore } from "../../Helpers/Data";
-import { Link } from "react-router-dom";
+import "./ShowAll.scss";
+import { allCategory } from "../../Helpers/Data";
 import Star from "../../assets/images/icons8-star-48.png";
+import { Link } from "react-router-dom";
+import Popup from "../../Components/Popup/Popup";
+import Bots from "../../Components/Bots/Bots";
 
-const AllCategories = () => {
-
+const ShowAll = () => {
   return (
-    <div className="explore">
-      <h1>Explore...</h1>
+    <div className="showAll">
       <div className="wrapper">
-        {Explore.map((data) => (
+        {allCategory.map((data) => (
           <Link to={`/products/${data.id}`} className="item" key={data.id}>
             <div className="imgWrapper">
               <img src={data.defaultImg} alt="image" className="default" />
@@ -24,22 +24,20 @@ const AllCategories = () => {
               <span className="now">${data.now}</span>
 
               <div className="rating">
-                <img width="18" src={Star} alt="star" />
-                <img width="18" src={Star} alt="star" />
-                <img width="18" src={Star} alt="star" />
-                <img width="18" src={Star} alt="star" />
-                <img width="18" src={Star} alt="star" />
+                <img src={Star} alt="star" />
+                <img src={Star} alt="star" />
+                <img src={Star} alt="star" />
+                <img src={Star} alt="star" />
+                <img src={Star} alt="star" />
               </div>
             </div>
 
             <div className="actions">
               <img
-                width="20"
                 src="https://img.icons8.com/ios/50/hearts--v1.png"
                 alt="hearts--v1"
               />
               <img
-                width="20"
                 src="https://img.icons8.com/ios/50/shopping-cart--v1.png"
                 alt="shopping-cart--v1"
               />
@@ -47,8 +45,11 @@ const AllCategories = () => {
           </Link>
         ))}
       </div>
+
+      <Bots/>
+      <Popup />
     </div>
   );
 };
 
-export default AllCategories;
+export default ShowAll;

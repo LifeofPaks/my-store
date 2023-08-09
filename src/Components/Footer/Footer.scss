@@ -34,6 +34,7 @@
             }
 
             .newsletter{
+
                 p{
                     font-size: 13px;
                 }
@@ -46,15 +47,18 @@
                         align-items: center;
                         margin-block: 1rem;
                         max-width: 300px;
+
                         input{
                             background: $white;
                             width: 100%;
                             padding: .8rem 1rem ;
+                            border-radius: 3px 0 0 3px;
                         }
 
                         button{
                             background: #3184D7;
                             padding: .6rem 1rem ;
+                            border-radius: 0 3px 3px 0;
 
                             img{
                                 width: 20px;

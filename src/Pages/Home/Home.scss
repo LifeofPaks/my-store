@@ -1,19 +1,6 @@
 .home{
     position: relative;
+    animation: fadeIn 1s 2s forwards;
+    opacity: 0;
 
-    .topButton{
-        position: fixed;
-        bottom: 1rem;
-        right: 1rem;
-
-        button{
-            background: #fff;
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            img{
-                width: 20px;
-            }
-        }
-    }
 }

@@ -1,13 +1,32 @@
-import React from 'react'
-import './Popup.scss'
-
+import React, { useState, useEffect } from "react";
+import "./Popup.scss";
 
 const Popup = () => {
-  return (
-    <div className='popup'>
-        <img src="" alt="popup" />
-    </div>
-  )
-}
+  const [showPopup, setShowPopUp] = useState(false);
 
-export default Popup
+  useEffect(() => {
+    const popUp = () => {
+      window.scrollY > 400 ? setShowPopUp(true) : setShowPopUp(false);
+    };
+
+    window.addEventListener("scroll", popUp);
+    return () => window.removeEventListener("scroll", popUp);
+  }, []);
+
+  return (
+    showPopup && (
+      <div className="popup">
+        <div className="imgWrapper">
+          <img
+            src="https://img.icons8.com/glyph-neue/64/FFFFFF/chat.png"
+            alt="chat"
+          />
+        </div>
+
+        <p>Feedbacks & Support</p>
+      </div>
+    )
+  );
+};
+
+export default Popup;

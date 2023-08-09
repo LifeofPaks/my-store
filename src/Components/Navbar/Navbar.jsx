@@ -62,9 +62,9 @@ const Navbar = () => {
 
         <div className="right">
           <Link to="/"> Home</Link>
-          <a href="#footer">About</a>
-          <a href="#footer">Contact</a>
-          <a href="#footer">Store</a>
+          <Link to='/'>About</Link>
+          <Link to='/'>Contact</Link>
+          <Link to='/products'>Store</Link>
           <img src={Search} alt="Others" />
           <img src={User} alt="Others" />
           <img src={Favorite} alt="Others" />
