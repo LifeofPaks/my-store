@@ -1,0 +1,48 @@
+.emptyCart{
+    
+    .modal{
+        position: fixed;
+        width: 100%;
+        top: 3rem;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        background: #f0f0f0;
+        overflow: hidden;
+        flex-direction: column;
+
+        .content{
+            background: #fff;
+            padding: 5rem 2rem;
+            text-align: center;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+
+            img{
+                margin-bottom: 1.5rem;
+                width: 50px;
+            }
+
+            h1{
+                font-size: 15px;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-weight: 300;
+                font-size: 14px;
+            }
+
+            span{
+                color: #555;
+                font-size: 12px;
+                display: block;
+                margin-top: 1rem;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}

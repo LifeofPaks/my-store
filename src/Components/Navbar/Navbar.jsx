@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.scss";
 import Logo from "../../assets/images/logo.png";
 import ArrowDown from "../../assets/images/icons8-expand-arrow-52.png";
-import Cart from "../../assets/images/icons8-cart-50.png";
+import CartIcon from "../../assets/images/icons8-cart-50.png";
 import Search from "../../assets/images/icons8-search-50.png";
 import User from "../../assets/images/icons8-user-32.png";
 import Favorite from "../../assets/images/icons8-favorite-50.png";
@@ -12,8 +12,10 @@ import Playstation from "../../assets/images/icons8-playstation-60.png";
 import Apple from "../../assets/images/icons8-apple-60.png";
 import Others from "../../assets/images/icons8-multiple-devices-52.png";
 import { Link } from "react-router-dom";
+import Cart from "../Cart/Cart";
+import EmptyCart from "../EmptyCart/EmptyCart";
 
-const Navbar = () => {
+const Navbar = ({ toggleCart, openCart, cartStatus, isEmpty, exitEmptyCart, homePage }) => {
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -29,25 +31,26 @@ const Navbar = () => {
           </div>
 
           <div className="item">
-            <Link to="/products/1">
+            <Link to="/products">
+            <img  src="https://img.icons8.com/glyph-neue/64/000000/multiple-devices.png" alt="multiple-devices" className="ps5"/>
+              Store
+            </Link>
+          </div>
+
+          <div className="item">
+            <Link to="playstation">
               <img src={Playstation} alt="PS5" className="ps5" />
               Play Station
             </Link>
           </div>
 
           <div className="item">
-            <Link to="/products/2">
+            <Link to="apple">
               <img src={Apple} alt="apple" />
               Apple
             </Link>
           </div>
 
-          <div className="item">
-            <Link to="/products/3">
-              <img src={Others} alt="Others" />
-              Others
-            </Link>
-          </div>
         </div>
 
         <div className="center logo">
@@ -61,19 +64,22 @@ const Navbar = () => {
 
         <div className="right">
           <Link to="/"> Home</Link>
-          <Link to='/'>About</Link>
-          <Link to='/'>Contact</Link>
-          <Link to='/products'>Store</Link>
+          <Link to="/">About</Link>
+          <Link to="/">Contact</Link>
           <img src={Search} alt="Others" />
           <img src={User} alt="Others" />
           <img src={Favorite} alt="Others" />
 
-          <div className="cartWrapper">
-            <img src={Cart} alt="Others" />
-            <span>1</span>
+          <div className="cartWrapper" onClick={toggleCart}>
+            <img src={CartIcon} alt="Others" />
+            {!isEmpty && <span>1</span>}
           </div>
         </div>
       </div>
+      {!isEmpty && openCart && <Cart cartStatus={cartStatus} isEmpty={isEmpty} />}
+      {
+        isEmpty && <EmptyCart exitEmptyCart={exitEmptyCart} homePage={homePage} isEmpty={isEmpty}/>
+      }
     </div>
   );
 };

@@ -3,7 +3,6 @@ import "./ShowAll.scss";
 import { allCategory } from "../../Helpers/Data";
 import Star from "../../assets/images/icons8-star-48.png";
 import { Link } from "react-router-dom";
-import Popup from "../../Components/Popup/Popup";
 import Bots from "../../Components/Bots/Bots";
 
 const ShowAll = () => {
@@ -47,7 +46,6 @@ const ShowAll = () => {
       </div>
 
       <Bots/>
-      <Popup />
     </div>
   );
 };

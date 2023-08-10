@@ -3,12 +3,10 @@ import "./Products.scss";
 import Loader from "react-loaders";
 import Banner6 from "../../assets/images/iwatchBanner.jpeg";
 import ShowAll from "../../Components/ShowAll/ShowAll";
-import { useParams } from "react-router-dom";
 
 
 const Products = () => {
   const [maxPrice, setMaxPrice] = useState(1000)
-  const param = useParams()
 
 
   return (
@@ -62,7 +60,7 @@ const Products = () => {
         </div>
       </div>
 
-      <Loader type="square-spin" />
+      <Loader type="ball-clip-rotate" />
     </>
   );
 };

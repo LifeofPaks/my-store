@@ -408,3 +408,153 @@ export const allCategory = [
     now: "249.99",
   },
 ];
+
+
+// APPLE STARTS HERE================================================================================
+export const appleItems = [
+
+  {
+    defaultImg:
+      "https://i3-prod-assets.indiaistore.com/files/uploads/products/apple-watch-ultra/img-lg-1662804279_3126.png",
+    hoverImg: "https://appleman.pk/cdn/shop/products/Y1_800x.png?v=1667918096",
+    title: "Apple Watch Ultra",
+    id: 1,
+    then: "399.99",
+    now: "249.99",
+  },
+
+  {
+    id: 2,
+    defaultImg:
+      "https://www.kindpng.com/picc/m/547-5471029_beats-headphones-box-png-transparent-png.png",
+    hoverImg:
+      "https://s.yimg.com/uu/api/res/1.2/HM557_M8GJBr.f.xd2rsDg--~B/Zmk9ZmlsbDtoPTU4Mzt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2023-06/0bf857b0-167a-11ee-bea1-3f1e3178b6d7.cf.jpg",
+    title: "Beats By Dre Headset",
+    then: "399.99",
+    now: "249.99",
+  },
+
+  {
+    defaultImg:
+      "https://coolstuf.com.pg/wp-content/uploads/2022/10/iPhone-14-PRO-MAX-model-1.jpg",
+    hoverImg:
+      "https://images.macrumors.com/t/FlDguoumEYiqBPNt0Sr2bi5c5EA=/1920x/article-new/2022/09/iphone-14-pro-box.jpg",
+    title: "iPhone 14 Pro Max",
+    id: 3,
+    then: "399.99",
+    now: "249.99",
+  },
+
+  {
+    defaultImg:
+      "https://res-1.cloudinary.com/grover/image/upload/v1623311209/do1qiyxlls6huqiubfzz.png",
+    hoverImg:
+      "https://ivenus.in/wp-content/uploads/2022/10/r1604_Cellular_11-in_4th-Gen_Silver_PDP_Image_Avail_Position-2__en-IN.png",
+    title: "Ipad Pro",
+    id: 4,
+    then: "399.99",
+    now: "249.99",
+  },
+
+  {
+    defaultImg:
+      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6376/6376542cv13d.jpg",
+    hoverImg:
+      "https://atlas-content-cdn.pixelsquid.com/assets_v2/263/2639376039943345780/jpeg-600/G03.jpg?modifiedAt=1",
+    title: "Apple Airpods Max",
+    id: 5,
+    then: "399.99",
+    now: "249.99",
+  },
+
+  {
+    defaultImg:
+      "https://help.apple.com/assets/5F90CF34680CE2962E2531FF/5F90CF3C680CE2962E25321E/en_US/bf91bedd0ddcba32f8b52adab4ca5261.png",
+    hoverImg:
+      "https://m.media-amazon.com/images/I/51uNM3SR6oL._AC_UF1000,1000_QL80_.jpg",
+    title: "Apple Tv",
+    id: 6,
+    then: "399.99",
+    now: "249.99",
+  },
+
+  {
+    defaultImg:
+      "https://r2d2.store/image/cache/catalog/product_1530_0_image-400x400.jpeg",
+    hoverImg:
+      "https://www.androidheadlines.com/wp-content/uploads/2020/10/airpods-pro.png",
+    title: "Airpods Pro",
+    id: 7,
+    then: "399.99",
+    now: "249.99",
+  },
+];
+
+
+
+// PLAYSTATION STARTS HERE================================================================================
+export const playstationItems = [
+  
+  {
+    id: 1,
+    defaultImg: Feature2,
+    hoverImg:
+      "https://blog.playstation.com/tachyon/2053/01/2bc04c3f8d548a11ef6b82562ffd8cebfdd32219-scaled.jpg?resize=1088%2C612&crop_strategy=smart",
+    title: "DualSense Edge",
+    then: "399.99",
+    now: "249.99",
+  },
+
+  {
+    defaultImg: Feature3,
+    hoverImg:
+      "https://ee.co.uk/content/dam/everything-everywhere/images/SHOP/ATP/PlayStation5/PS53DWirelessHeadset_MainImage_960x540.png",
+    title: "PULSE 3D™ Wireless Headset",
+    id: 2,
+    then: "399.99",
+    now: "249.99",
+  },
+
+  {
+    defaultImg: Feature5,
+    hoverImg:
+      "https://s3.eu-west-1.amazonaws.com/replay.com.mt/2020-12/711719981268_0.jpg",
+    title: "PlayStation VR2",
+    id: 3,
+    then: "399.99",
+    now: "249.99",
+  },
+
+  {
+    defaultImg: Feature6,
+    hoverImg:
+      "https://i5.walmartimages.com/asr/ab99850d-0cc5-477b-a584-5c4adf91ff0a.7c33f66572ad572ece98ceec9da97aad.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+    title: "Playstation 5 HD Camera",
+    id: 4,
+    then: "399.99",
+    now: "249.99",
+  },
+
+  {
+    hoverImg:
+      "https://th-test-11.slatic.net/p/0bbe72403bdc70807245f54e813fd56f.jpg",
+    defaultImg: Feature4,
+    title: "DualSense™  Controller",
+    id: 5,
+    then: "399.99",
+    now: "249.99",
+  },
+
+  {
+    hoverImg:
+      "https://primary.jwwb.nl/public/l/i/d/temp-pyvyqhodlppqvcjhkezb/802kjb/PS5-2-1.jpg",
+    defaultImg:
+      "https://www.designinfo.in/wp-content/uploads/nc/p/5/1/9/2/9/51929-485x485-optimized.jpg",
+    title: "Play Station 5",
+    id: 6,
+    then: "399.99",
+    now: "249.99",
+  },
+
+];
+

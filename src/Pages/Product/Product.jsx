@@ -1,35 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Product.scss";
-import Loader from "react-loaders";
-import { useNavigate } from "react-router-dom";
 import Star from "../../assets/images/icons8-star-48.png";
 import SimilarItem from "../../Components/SimilarItems/SimilarItem";
 
-const Product = () => {
-  const [selectedImage, setSelectedImage] = useState(0);
-  const [quantity, setQuantity] = useState(0);
-  const [selected, setSelected] = useState(false);
-  const navigate = useNavigate();
-
-  const increase = () => {
-    setQuantity(quantity + 1);
-  };
-
-  const decrease = () => {
-    setQuantity(quantity === 0 ? 0 : quantity - 1);
-  };
-
-  const addToCart = () => {
-    setQuantity(quantity);
-    navigate("/");
-  };
-
+const Product = ({
+  selectedImage,
+  setSelectedImage,
+  quantity,
+  increase,
+  decrease,
+  addToCart,
+}) => {
   const images = [
     "https://w7.pngwing.com/pngs/409/861/png-transparent-noise-cancelling-headphones-beats-electronics-beats-solo3-audio-headphones-electronics-magenta-mobile-phones.png",
     "https://cutewallpaper.org/24/beats-headphones-png/transparent-apple-headphones-png-beats-studio-3-wireless-gray-png-download-kindpng.png",
     "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/studiopro-wireless/pdp/product-carousel/black/pc-studiopro-black-thrqtr-right.jpg",
   ];
-
 
   return (
     <>
@@ -38,20 +24,17 @@ const Product = () => {
           <div className="left">
             <div className="images">
               <img
-              className={`${selected ? 'selected' : ''}`}
                 src={images[0]}
                 alt="productImage"
                 onClick={(e) => setSelectedImage(0)}
               />
               <img
-              className={`${selected ? 'selected' : ''}`}
                 src={images[1]}
                 alt="productImage"
                 onClick={(e) => setSelectedImage(1)}
               />
 
               <img
-              className={`${selected ? 'selected' : ''}`}
                 src={images[2]}
                 alt="productImage"
                 onClick={(e) => setSelectedImage(2)}
@@ -69,7 +52,7 @@ const Product = () => {
               Headphones
             </h1>
             <p className="brand">
-              Brand: <span>Sony | Similar products from Sony</span>{" "}
+              Brand: <span>Apple | Similar products from Sony</span>{" "}
             </p>
 
             <div className="price">
@@ -135,8 +118,6 @@ const Product = () => {
 
         <SimilarItem />
       </div>
-
-      <Loader type="square-spin" />
     </>
   );
 };
