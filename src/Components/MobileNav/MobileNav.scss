@@ -1,0 +1,124 @@
+@import '../../Styles/Responsive.scss';
+
+.mobileNav{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+    display: none;
+
+    @include mobile{
+        display: block;
+    }
+    
+    img{
+        width: 20px;
+    }
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: .5rem 3%;
+
+        .logo{
+            a{
+                display: flex;
+                align-items: center;
+                gap: .2rem;
+
+                img{
+                    width: 30px;
+                }
+
+                h1{
+                    font-size: 18px;
+                    span{
+                        font-family: 'Clicker Script', cursive;
+                        font-size: 20px;
+                        color: #3184D7;
+                    }
+                }
+            }
+           
+        }
+
+        .menu{
+            width: 40px;
+            height: 40px;
+            position: relative;
+
+            img{
+                position: absolute;
+                width: 25px;
+                cursor: pointer;
+                transition: .3s;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+
+                &.arrow{
+                    opacity: 0;
+                }
+            }
+        
+        }
+
+
+    }
+
+    .bottom{
+        padding: .8rem 3%;
+        .mnWrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .currency{
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                img{
+                    width: 15px;
+                }
+
+                p{
+                    font-size: 12px;
+                }
+
+                .mnItem{
+                    display: flex;
+                    align-items: center;
+    
+                    .arrow{
+                        width: 10px;
+                    }
+                }
+            }
+
+            .cartWrapper{
+                position: relative;
+                cursor: pointer;
+
+                span{
+                    position: absolute;
+                    top: -6px;
+                    right: -6px;
+                    background: red;
+                    width: 14px;
+                    height: 14px;
+                    color: #fff;
+                    font-size: 10px;
+                    border-radius: 50%;
+                    display: grid;
+                    place-content: center;
+                }
+            }
+
+        }
+      
+    }
+
+}
