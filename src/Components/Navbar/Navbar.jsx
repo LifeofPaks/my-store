@@ -52,21 +52,21 @@ const Navbar = ({
                   alt="multiple-devices"
                   className="ps5"
                 />
-                Store
+                 <p>Store</p>
               </Link>
             </div>
 
             <div className="item">
               <Link to="playstation">
                 <img src={Playstation} alt="PS5" className="ps5" />
-                Play Station
+                 <p>Play Station</p>
               </Link>
             </div>
 
             <div className="item">
               <Link to="apple">
                 <img src={Apple} alt="apple" />
-                Apple
+                 <p>Apple</p>
               </Link>
             </div>
           </div>
@@ -81,9 +81,14 @@ const Navbar = ({
           </div>
 
           <div className="right">
-            <Link to="/"> Home</Link>
-            <Link to="/">About</Link>
-            <Link to="/">Contact</Link>
+            <Link to="/" className="homeWrapper">  <p>Home</p>   <img
+              src="https://img.icons8.com/ios/100/home--v1.png"
+              alt="home--v1"
+              className="homeIcon"
+            />
+            </Link>
+            <Link to="/"> <p>About</p></Link>
+            <Link to="/"> <p>Contact</p></Link>
             <img src={Search} alt="Others" />
             <img src={User} alt="Others" />
             <img src={Favorite} alt="Others" />

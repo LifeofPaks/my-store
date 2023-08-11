@@ -1,3 +1,5 @@
+@import '../../Styles/Responsive.scss';
+
 .feature{
     padding-inline: 5%;
 
@@ -13,6 +15,10 @@
             h1{
                 font-weight: 200;
                 margin-bottom: 1rem;
+
+                @include tablet{
+                    font-size: 22px;
+                }
             }
 
             p{
@@ -22,6 +28,12 @@
                 font-size: 18px;
                 color: #444;
                 font-weight: 300;
+
+                @include tablet{
+                    font-size: 14px;
+                    width: 300px;
+                    line-height: 22px;
+                }
             }
 
             button{
@@ -31,6 +43,11 @@
                 font-weight: 600;
                 padding-block: .5rem;
                 margin-right: 1rem;
+
+                @include tablet{
+                    font-size: 13px;
+                    width: 100px;
+                }
 
                 &.learnMore{
                     background: #3184D7;
@@ -49,9 +66,18 @@
 
     .moreFeature{
         margin-bottom: 3rem;
+
+        @include tablet{
+            margin-bottom: 2rem;
+        }
+
         h2{
             margin-bottom: 1rem;
             margin-top: 2rem;
+
+            @include tablet{
+                font-size: 16px;
+            }
         }
 
         .wrapper{
@@ -65,12 +91,17 @@
                 transition: .3s;
                 width: 200px;
                 height: 200px;
-                padding: 1rem;
                 border-radius: 1rem;
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include tablet{
+                    width: 150px;
+                    height: 150px;
+                    padding: .5rem;
+                }
 
 
 
@@ -89,6 +120,10 @@
                     text-align: center;
                     position: absolute;
                     bottom: 1rem;
+
+                    @include tablet{
+                        font-size: 11px;
+                    }
                 }
 
             }

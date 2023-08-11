@@ -29,6 +29,13 @@
             justify-content: space-between;
             gap: 2rem;
 
+            p{
+                @include tablet{
+                    display: none;
+                }
+                
+            }
+
             .item{
                 display: flex;
                 align-items: center;
@@ -47,10 +54,18 @@
 
                 .flag{
                     width: 20px;
+
+                    @include tablet{
+                        width: 14px;
+                    }
                 }
 
                 .arrow{
                     width: 11px;
+
+                    @include tablet{
+                        width: 8px;
+                    }
                 }
 
                 a{
@@ -62,10 +77,18 @@
 
                     img{
                         width: 18px;
+
+                        @include tablet{
+                            width: 14px;
+                        }
                     }
 
                     .ps5{
                         width: 20px;
+
+                        @include tablet{
+                            width: 16px;
+                        }
                     }
                 }
             }
@@ -80,14 +103,26 @@
 
                 img{
                     width: 30px;
+
+                    @include tablet{
+                        width: 20px;
+                    }
                 }
 
                 h1{
                     font-size: 18px;
+
+                    @include tablet{
+                        font-size: 15px;
+                    }
                     span{
                         font-family: 'Clicker Script', cursive;
                         font-size: 20px;
                         color: #3184D7;
+
+                        @include tablet{
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -99,6 +134,27 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
+
+            p{
+
+                @include tablet {
+                    display: none;
+                  }
+            }
+
+            .homeWrapper{
+                display: flex;
+                align-items: center;
+                gap: .3rem;
+
+                .homeIcon{
+                    display: none;
+
+                    @include tablet{
+                        display: block;
+                    }
+                }
+            }
 
             a{
                 position: relative;
@@ -125,6 +181,10 @@
             img{
                 width: 20px;
                 cursor: pointer;
+
+                @include tablet{
+                    width: 16px;
+                }
             }
 
             .cartWrapper{
