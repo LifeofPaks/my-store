@@ -486,6 +486,51 @@ export const appleItems = [
           then: "399.99",
           now: "249.99",
         },
+
+        {
+          id: 9,
+          defaultImg:
+            "https://photos5.appleinsider.com/gallery/44355-86237-iphone-13-pro-2-xl.jpg",
+          hoverImg:
+            "https://www.notebookcheck.net/fileadmin/Notebooks/Apple/iPhone_13_Pro/Produktfotos_Apple_iPhone_13_Pro_1448.jpg",
+          title: "iPhone 13 Pro Max",
+          then: "399.99",
+          now: "249.99",
+        },
+
+        {
+          id: 11,
+          defaultImg:
+            "https://yabloki.ua/media/cache/product_homepage_image/aa/f0/30800d4a591a59087e0e03a1505a.png",
+          hoverImg:
+            "https://i0.wp.com/gadgetfabriek.nl/wp-content/uploads/2022/08/homepod-mini-geel.jpg?resize=300%2C300&ssl=1",
+          title: "Apple HomePod",
+          then: "399.99",
+          now: "249.99",
+        },
+
+        {
+          id: 12,
+          hoverImg:
+            "https://gadget.com.ng/wp-content/uploads/2023/01/FcQ7OxzXoAAYYMu.jpeg",
+            defaultImg: 
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-plus-red-select-202209?wid=940&hei=1112&fmt=png-alpha&.v=1660750133448",
+          title: "iPhone 14",
+          then: "399.99",
+          now: "249.99",
+        },
+
+        {
+          id: 16,
+          defaultImg:
+            "https://www.asimmobiles.com/wp-content/uploads/2019/01/iphone12-pro-max-procuct1.png",
+          hoverImg:
+            "https://www.renderhub.com/rever-art/apple-iphone-12-pro-all-colors/apple-iphone-12-pro-all-colors-34.jpg",
+          title: "iPhone 12 Pro Max",
+          then: "399.99",
+          now: "249.99",
+        },
+      
       
         {
           defaultImg:
@@ -580,12 +625,81 @@ export const playstationItems = [
           hoverImg:
             "https://primary.jwwb.nl/public/l/i/d/temp-pyvyqhodlppqvcjhkezb/802kjb/PS5-2-1.jpg",
           defaultImg:
-            "https://www.designinfo.in/wp-content/uploads/nc/p/5/1/9/2/9/51929-485x485-optimized.jpg",
+            "https://www.ntelectronic.com/cdn/shop/products/117_1b39ae17-ba8a-40a3-9fe3-360b9dc8cc67_613x.png?v=1634841712",
           title: "Play Station 5",
           id: 6,
           then: "399.99",
           now: "249.99",
         },
+
+        {
+          hoverImg:
+            "https://i.gadgets360cdn.com/large/sony_playstation_remote_backbone_1659091817289.jpg",
+          defaultImg:
+            "https://cdn.whatgadget.net/wp-content/uploads/2022/08/03190630/Timberline-Hero2-1280x640.png",
+          title: "PlayStation Backbone One",
+          id: 7,
+          then: "399.99",
+          now: "249.99",
+        },
+
+        {
+          hoverImg:
+            "https://gmedia.playstation.com/is/image/SIEPDC/racing-wheels-fanatec-gt-dd-pro-image-block-01-en-09mar22?$1600px--t$",
+          defaultImg:
+            "https://gmedia.playstation.com/is/image/SIEPDC/racing-wheels-thrustmaster-tgt2-image-block-01-en-09mar22?$1600px--t$",
+          title: "Racing Wheels",
+          id: 9,
+          then: "399.99",
+          now: "249.99",
+        },
+
+        {
+          hoverImg:
+            "https://www-konga-com-res.cloudinary.com/w_400,f_auto,fl_lossy,dpr_3.0,q_auto/media/catalog/product/J/F/63606_1604766590.jpg",
+          defaultImg:
+            "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-charging-station-image-block-01-en-02jul20?$1600px$",
+          title: "DualSense charging station",
+          id: 8,
+          then: "399.99",
+          now: "249.99",
+        },
+
+        {
+          hoverImg:
+            "https://blog.playstation.com/tachyon/2023/07/d84c4562060a959568255d06aa66f8a6ffa18cd4.jpg?resize=1088%2C612&crop_strategy=smart",
+          defaultImg:
+            "https://gmedia.playstation.com/is/image/SIEPDC/ps5-console-covers-keyart-01-en-08dec21?$facebook$",
+          title: "PS5 console covers",
+          id: 11,
+          then: "399.99",
+          now: "249.99",
+        },
+
+        {
+          hoverImg:
+            "https://m.media-amazon.com/images/I/61Yyynf6E8S._SL1500_.jpg",
+          defaultImg:
+            "https://gmedia.playstation.com/is/image/SIEPDC/media-remote-listing-thumb-01-ps5-en-12oct20?$1600px$",
+          title: "PlayStation Media Remote",
+          id: 12,
+          then: "399.99",
+          now: "249.99",
+        },
+
+        {
+          hoverImg:
+            "https://assets-prd.ignimgs.com/2023/05/18/ps5-access-controller-7-1684419506635.jpg?crop=16%3A9&width=888",
+          defaultImg:
+            "https://gmedia.playstation.com/is/image/SIEPDC/access-controller-image-block-01-en-12may23?$facebook$",
+          title: "PlayStation Access Controller",
+          id: 13,
+          then: "399.99",
+          now: "249.99",
+        },
+
+
+     
       ],
   },
 
