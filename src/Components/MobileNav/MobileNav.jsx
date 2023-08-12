@@ -25,7 +25,7 @@ toggleMenu
   return (
     <div className="mobileNav">
       <div className="top">
-        <div className="center logo">
+        <div className="center logo" onClick={homePage}>
           <Link to="/">
             <img src={Logo} alt="logo" />
             <h1>

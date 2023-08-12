@@ -76,7 +76,7 @@ toggleMenu,
             </div>
           </div>
 
-          <div className="center logo">
+          <div className="center logo" onClick={homePage}>
             <Link to="/">
               <img src={Logo} alt="logo" />
               <h1>
