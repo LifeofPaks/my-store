@@ -1,8 +1,21 @@
+@import "../../Styles/Responsive.scss";
+
 .bot{
     .topButton{
         position: fixed;
         bottom: 1rem;
         right: 1rem;
+
+        @include tablet {
+            bottom: .3rem;
+            right: .3rem;
+          }
+
+          @include mobile {
+            bottom: .1rem;
+            right: .1rem;
+          }
+    
 
         button{
             background: #fff;
@@ -10,8 +23,26 @@
             width: 20px;
             border-radius: 50%;
 
+            @include tablet {
+                height: 18px;
+                width: 18px;
+              }
+
+            @include mobile {
+                height: 15px;
+                width: 15px;
+              }
+
             img{
                 width: 20px;
+
+                @include tablet {
+                    width: 18px;
+                  }
+
+                  @include mobile {
+                    width: 15px;
+                  }
             }
         }
     }

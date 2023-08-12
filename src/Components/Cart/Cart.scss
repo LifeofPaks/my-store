@@ -11,12 +11,12 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 
     @include tablet {
-        top: 2.7rem;
+        top: 2.6rem;
         width: 300px;
       }
 
-      @include tablet {
-        top: 3rem;
+      @include mobile {
+        top: 2.88rem;
       }
 
     h1{
