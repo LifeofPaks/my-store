@@ -55,7 +55,7 @@ toggleMenu
 
       <div className={` bottom ${showMenu ? 'showMenu' : ''}`}>
         <div className="mnWrapper">
-          <Link to="/">
+          <Link to="/" onClick={homePage}>
             <img
               src="https://img.icons8.com/ios/100/home--v1.png"
               alt="home--v1"

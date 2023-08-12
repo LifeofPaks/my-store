@@ -7,7 +7,7 @@ const Cart = ({ cartStatus, isEmpty }) => {
     <div className="cart">
       <h1>Products in your cart</h1>
       {!isEmpty && <CartItem cartStatus={cartStatus} />}
-      <p className="reset">Clear Cart</p>
+      <p className="reset" onClick={cartStatus}>Clear Cart</p>
     </div>
   );
 };
