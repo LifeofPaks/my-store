@@ -21,6 +21,8 @@ const Navbar = ({
   isEmpty,
   exitEmptyCart,
   homePage,
+  showMenu,
+toggleMenu,
 }) => {
   return (
     <>
@@ -31,7 +33,10 @@ const Navbar = ({
         isEmpty={isEmpty}
         exitEmptyCart={exitEmptyCart}
         homePage={homePage}
+        showMenu = {showMenu}
+        toggleMenu = {toggleMenu}
       />
+      
       <div className="navbar">
         <div className="wrapper">
           <div className="left">

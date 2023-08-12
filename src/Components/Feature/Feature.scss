@@ -11,6 +11,10 @@
         align-items: center;
         justify-content: space-between;
 
+        @include mobile{
+            flex-direction: column-reverse;
+        }
+
         .itemInfo{
             h1{
                 font-weight: 200;
@@ -19,6 +23,7 @@
                 @include tablet{
                     font-size: 22px;
                 }
+
             }
 
             p{
@@ -34,33 +39,55 @@
                     width: 300px;
                     line-height: 22px;
                 }
+
             }
 
-            button{
-                width: 120px;
-                color: #fff;
-                font-size: 15px;
-                font-weight: 600;
-                padding-block: .5rem;
-                margin-right: 1rem;
+            .buttonWrapper{
 
-                @include tablet{
-                    font-size: 13px;
-                    width: 100px;
+                @include mobile{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 2rem;
                 }
-
-                &.learnMore{
-                    background: #3184D7;
-                }
-
-                &.buyNow{
-                    background: red;
+                button{
+                    width: 120px;
+                    color: #fff;
+                    font-size: 15px;
+                    font-weight: 600;
+                    padding-block: .5rem;
+                    margin-right: 1rem;
+    
+                    @include tablet{
+                        font-size: 13px;
+                        width: 100px;
+                    }
+    
+                    @include mobile{
+                        width: 30%;
+                        font-size: 11px;
+                    }
+    
+                    &.learnMore{
+                        background: #3184D7;
+                    }
+    
+                    &.buyNow{
+                        background: red;
+                    }
                 }
             }
+
+        
         }
 
         img{
             width: 50%;
+
+            @include mobile{
+                width: 100%;
+            }
         }
     }
 
@@ -78,12 +105,21 @@
             @include tablet{
                 font-size: 16px;
             }
+
+            @include mobile{
+                margin-bottom: .5rem;   
+            }
         }
 
         .wrapper{
             display: flex;
             gap: 1rem;
             justify-content: center;
+
+            @include mobile{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
 
             .item{
                 padding: 1rem;
@@ -102,9 +138,6 @@
                     height: 150px;
                     padding: .5rem;
                 }
-
-
-
 
                 &:hover{
                     border: 1px solid #3184D7;;

@@ -12,8 +12,10 @@ const Feature = () => {
               <h1>{data.title}</h1>
               <p>{data.desc}</p>
 
-              <button className="learnMore">Learn more</button>
-              <button className="buyNow">Buy now</button>
+              <div className="buttonWrapper">
+                <button className="learnMore">Learn more</button>
+                <button className="buyNow">Buy now</button>
+              </div>
             </div>
             <img src={data.featureImage} alt="feature" />
           </div>

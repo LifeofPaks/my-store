@@ -18,8 +18,16 @@
             padding-block: 1rem;
         }
 
+        @include mobile{
+            flex-wrap: wrap;
+        }
+
 
         .col{
+
+            @include mobile{
+                width: 100%;
+            }
 
             h2{
                 text-transform: uppercase;
@@ -49,6 +57,10 @@
             }
 
             .newsletter{
+
+                @include mobile{
+                    width: 80%;
+                }
 
                 p{
                     font-size: 13px;
@@ -121,6 +133,7 @@
                             @include tablet{
                                 display: none;
                             }
+
                         }
 
                         p{
@@ -151,6 +164,7 @@
         }
 
         .followUS{
+
             h2{
                 width: 100%;
                 text-align: center;
@@ -187,6 +201,10 @@
                 align-items: center;
                 gap: 1rem;
 
+                @include mobile{
+                    justify-content: center;
+                }
+
                 img{
                     width: 120px;
                     margin-top: 1rem;
@@ -195,6 +213,11 @@
                     @include tablet{
                         width: 80px;
                     }
+
+                    @include mobile{
+                        width: 100px;
+                    }
+
                 }
             }
           
@@ -220,6 +243,12 @@
                     @include tablet{
                         width: 20px;
                     }
+
+                    @include mobile{
+                        width: 15px;
+                    }
+
+
                 }
 
                 h1{
@@ -230,6 +259,10 @@
                         font-size: 15px;
                     }
 
+                    @include mobile{
+                        font-size: 11px;
+                    }
+
                     span{
                         font-family: 'Clicker Script', cursive;
                         font-size: 20px;
@@ -237,6 +270,10 @@
 
                         @include tablet{
                             font-size: 16px;
+                        }
+
+                        @include mobile{
+                            font-size: 12px;
                         }
                     }
                 }
@@ -254,6 +291,10 @@
                 @include tablet{
                     width: 200px;
                 }
+
+                @include mobile{
+                    width: 120px;
+                }
             }
         }
     }
@@ -262,9 +303,14 @@
         width: 100%;
         color: $white;
         font-size: 10px;
+        margin-bottom: 1rem;
 
         @include tablet{
             font-size: 8px;
+        }
+
+        @include mobile{
+            font-size: 7px;
         }
 
     }

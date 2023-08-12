@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
 import { Outlet, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
@@ -16,6 +16,8 @@ function App() {
   const [openCart, setOpenCart] = useState(false);
   const [isEmpty, setIsEmpty] = useState(false);
   const [exitEmptyCart, setExitEmptyCart] = useState(false)
+  const [showMenu, setShowMenu] = useState(false)
+
 
   const navigate = useNavigate();
 
@@ -52,6 +54,25 @@ function App() {
     setExitEmptyCart(true)
   }
 
+  const toggleMenu = ()=>{
+    setShowMenu(!showMenu)
+    setExitEmptyCart(true)
+  }
+ 
+
+  // EXIT NAV MENU ON SCROLL
+   useEffect(()=>{
+
+    const exitNav =()=>{
+      setShowMenu(false)
+    }
+
+    window.addEventListener('scroll', exitNav)
+    return ()=> window.removeEventListener('scroll', exitNav)
+
+   }, [])
+
+
 
   const Layout = () => {
     return (
@@ -64,6 +85,8 @@ function App() {
           isEmpty={isEmpty}
           exitEmptyCart={exitEmptyCart} 
           homePage = {homePage}
+          showMenu ={showMenu}
+          toggleMenu ={toggleMenu}
         />
         <div className="main">
           <Outlet />

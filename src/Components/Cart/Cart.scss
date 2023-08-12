@@ -1,3 +1,5 @@
+@import "../../Styles/Responsive.scss";
+
 .cart{
     font-family: 'Roboto', sans-serif; 
     position: fixed;
@@ -8,10 +10,24 @@
     width: 400px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 
+    @include tablet {
+        top: 2.7rem;
+        width: 300px;
+      }
+
+      @include tablet {
+        top: 3rem;
+      }
+
     h1{
         font-weight: 400;
         font-size: 16px;
         margin-bottom: 1rem;
+
+        @include tablet {
+            font-size: 14px;
+          }
+    
     }
 
     .reset{
@@ -19,5 +35,9 @@
         color: #f40000;
         font-weight: 500;
         cursor: pointer;
+
+        @include tablet {
+            font-size: 11px;
+          }
     }
 }

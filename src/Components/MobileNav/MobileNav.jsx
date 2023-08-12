@@ -19,6 +19,8 @@ const MobileNav = ({
   isEmpty,
   exitEmptyCart,
   homePage,
+  showMenu,
+toggleMenu
 }) => {
   return (
     <div className="mobileNav">
@@ -32,21 +34,26 @@ const MobileNav = ({
           </Link>
         </div>
 
-        <div className="menu">
-          <img
-            src="https://img.icons8.com/ios-glyphs/60/menu--v1.png"
-            alt="menu--v1"
-            className="hamburger"
-          />
-          <img
+        <div className="menu" onClick={toggleMenu}>
+          {
+            showMenu ?   <img
             src="https://img.icons8.com/fluency-systems-regular/96/long-arrow-left.png"
             alt="long-arrow-left"
             className="arrow"
-          />
+          /> : 
+
+          <img
+          src="https://img.icons8.com/ios-glyphs/60/menu--v1.png"
+          alt="menu--v1"
+          className="hamburger"
+        />
+          }
+        
+        
         </div>
       </div>
 
-      <div className="bottom">
+      <div className={` bottom ${showMenu ? 'showMenu' : ''}`}>
         <div className="mnWrapper">
           <Link to="/">
             <img
@@ -54,18 +61,6 @@ const MobileNav = ({
               alt="home--v1"
             />
           </Link>
-
-          <div className="currency">
-            <div className="mnItem">
-              <img src={Flag} alt="flag" className="flag" />
-              <img src={ArrowDown} alt="arrow" className="arrow" />
-            </div>
-
-            <div className="mnItem">
-                <p>$</p>
-              <img src={ArrowDown} alt="arrow" className="arrow" />
-            </div>
-          </div>
 
           <Link to="/products">
             <img
