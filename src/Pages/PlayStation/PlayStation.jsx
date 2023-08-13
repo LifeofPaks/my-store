@@ -5,7 +5,7 @@ import { playstationItems } from "../../Helpers/Data";
 import { Link } from "react-router-dom";
 import Star from "../../assets/images/icons8-star-48.png";
 
-const PlayStation = () => {
+const PlayStation = ({scrollToTop}) => {
   return (
     <>
       <div className="playstation">
@@ -32,6 +32,7 @@ const PlayStation = () => {
                       to={`/products/${data.id}`}
                       className="item"
                       key={data.id}
+                      onClick={scrollToTop}
                     >
                       <div className="imgWrapper">
                         <img

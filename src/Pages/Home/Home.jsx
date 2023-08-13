@@ -6,7 +6,7 @@ import AllCategories from "../../Components/AllCategories/AllCategories";
 import Loader from "react-loaders";
 import Bots from "../../Components/Bots/Bots";
 
-const Home = () => {
+const Home = ({scrollToTop}) => {
 
 
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       <div className="home">
         <Banner />
         <Feature />
-        <AllCategories />
+        <AllCategories scrollToTop={scrollToTop} />
         <Bots/>
       </div>
       <Loader type="ball-clip-rotate" />

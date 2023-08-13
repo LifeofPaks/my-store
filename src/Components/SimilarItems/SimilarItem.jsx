@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import Star from "../../assets/images/icons8-star-48.png";
 import './SimilarItem.scss'
 
-const SimilarItem = () => {
+const SimilarItem = ({scrollToTop}) => {
   return (
     <div className='similarItem'>
         <h2>Similar itmes you may like</h2>
         <div className="Xwrapper">
         {Explore.slice(0,5).map((data) => (
-          <Link to={`/products/${data.id}`} className="item" key={data.id}>
+          <Link to={`/products/${data.id}`} className="item" key={data.id} onClick={scrollToTop}>
             <div className="imgWrapper">
               <img src={data.defaultImg} alt="image" className="default" />
 

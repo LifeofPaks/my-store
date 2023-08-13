@@ -10,6 +10,7 @@ const Product = ({
   increase,
   decrease,
   addToCart,
+  scrollToTop
 }) => {
   const images = [
     "https://w7.pngwing.com/pngs/409/861/png-transparent-noise-cancelling-headphones-beats-electronics-beats-solo3-audio-headphones-electronics-magenta-mobile-phones.png",
@@ -116,7 +117,7 @@ const Product = ({
           </div>
         </div>
 
-        <SimilarItem />
+        <SimilarItem scrollToTo={scrollToTop}/>
       </div>
     </>
   );

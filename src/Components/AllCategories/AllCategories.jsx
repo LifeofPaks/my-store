@@ -4,14 +4,15 @@ import { Explore } from "../../Helpers/Data";
 import { Link } from "react-router-dom";
 import Star from "../../assets/images/icons8-star-48.png";
 
-const AllCategories = () => {
+const AllCategories = ({scrollToTop}) => {
 
   return (
     <div className="explore">
       <h1>Explore...</h1>
       <div className="wrapper">
         {Explore.map((data) => (
-          <Link to={`/products/${data.id}`} className="item" key={data.id}>
+
+          <Link to={`/products/${data.id}`} className="item" key={data.id} onClick={scrollToTop}>
             <div className="imgWrapper">
               <img src={data.defaultImg} alt="image" className="default" />
 

@@ -100,10 +100,10 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="products" element={<Products />} />
-          <Route path="playstation" element={<PlayStation />} />
-          <Route path="apple" element={<Apple />} />
+          <Route index element={<Home scrollToTop={scrollToTop}/>} />
+          <Route path="products" element={<Products scrollToTop={scrollToTop}/>} />
+          <Route path="playstation" element={<PlayStation  scrollToTop={scrollToTop}/>} />
+          <Route path="apple" element={<Apple   scrollToTop={scrollToTop}/>} />
 
           <Route
             path="/products/:id"
@@ -118,6 +118,7 @@ function App() {
                 addToCart={addToCart}
                 isEmpty = {isEmpty}
                 setIsEmpty = {setIsEmpty}
+                scrollToTop={scrollToTop}
               />
               
             }
