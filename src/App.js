@@ -60,17 +60,15 @@ function App() {
   }
  
 
-  // EXIT NAV MENU ON SCROLL
-   useEffect(()=>{
+  // AUTO SCROLL TOP ON EACH PAGE
+   const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
 
-    const exitNav =()=>{
-      setShowMenu(false)
-    }
-
-    window.addEventListener('scroll', exitNav)
-    return ()=> window.removeEventListener('scroll', exitNav)
-
-   }, [])
+  const handleClick = ()=>{
+    scrollToTop()
+    homePage()
+  }
 
 
 
@@ -87,6 +85,8 @@ function App() {
           homePage = {homePage}
           showMenu ={showMenu}
           toggleMenu ={toggleMenu}
+          scrollToTop={scrollToTop}
+          handleClick={handleClick}
         />
         <div className="main">
           <Outlet />

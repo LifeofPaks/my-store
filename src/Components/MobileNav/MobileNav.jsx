@@ -1,11 +1,9 @@
 import React from "react";
 import "./MobileNav.scss";
 import Logo from "../../assets/images/logo.png";
-import ArrowDown from "../../assets/images/icons8-expand-arrow-52.png";
 import CartIcon from "../../assets/images/icons8-cart-50.png";
 import Search from "../../assets/images/icons8-search-50.png";
 import Favorite from "../../assets/images/icons8-favorite-50.png";
-import Flag from "../../assets/images/icons8-usa-flag-48.png";
 import Playstation from "../../assets/images/icons8-playstation-60.png";
 import Apple from "../../assets/images/icons8-apple-60.png";
 import { Link } from "react-router-dom";
@@ -20,13 +18,15 @@ const MobileNav = ({
   exitEmptyCart,
   homePage,
   showMenu,
-toggleMenu
+toggleMenu,
+scrollToTop,
+handleClick,
 }) => {
   return (
     <div className="mobileNav">
       <div className="top">
-        <div className="center logo" onClick={homePage}>
-          <Link to="/">
+        <div className="center logo" onClick={handleClick}>
+          <Link to="/" onClick={scrollToTop}>
             <img src={Logo} alt="logo" />
             <h1>
               PAKS <span>Everything</span>
@@ -55,14 +55,14 @@ toggleMenu
 
       <div className={` bottom ${showMenu ? 'showMenu' : ''}`}>
         <div className="mnWrapper">
-          <Link to="/" onClick={homePage}>
+          <Link to="/" onClick={handleClick}>
             <img
               src="https://img.icons8.com/ios/100/home--v1.png"
               alt="home--v1"
             />
           </Link>
 
-          <Link to="/products">
+          <Link to="/products" onClick={scrollToTop}>
             <img
               src="https://img.icons8.com/glyph-neue/64/000000/multiple-devices.png"
               alt="multiple-devices"
@@ -70,11 +70,11 @@ toggleMenu
             />
           </Link>
 
-          <Link to="playstation">
+          <Link to="playstation" onClick={scrollToTop}>
             <img src={Playstation} alt="PS5" className="ps5" />
           </Link>
 
-          <Link to="apple">
+          <Link to="apple" onClick={scrollToTop}>
             <img src={Apple} alt="apple" />
           </Link>
 

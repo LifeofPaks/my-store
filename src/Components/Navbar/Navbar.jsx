@@ -22,7 +22,9 @@ const Navbar = ({
   exitEmptyCart,
   homePage,
   showMenu,
-toggleMenu,
+  toggleMenu,
+  scrollToTop,
+  handleClick,
 }) => {
   return (
     <>
@@ -33,10 +35,12 @@ toggleMenu,
         isEmpty={isEmpty}
         exitEmptyCart={exitEmptyCart}
         homePage={homePage}
-        showMenu = {showMenu}
-        toggleMenu = {toggleMenu}
+        showMenu={showMenu}
+        toggleMenu={toggleMenu}
+        scrollToTop={scrollToTop}
+        handleClick={handleClick}
       />
-      
+
       <div className="navbar">
         <div className="wrapper">
           <div className="left">
@@ -51,32 +55,32 @@ toggleMenu,
             </div>
 
             <div className="item">
-              <Link to="/products">
+              <Link to="/products" onClick={scrollToTop}>
                 <img
                   src="https://img.icons8.com/glyph-neue/64/000000/multiple-devices.png"
                   alt="multiple-devices"
                   className="ps5"
                 />
-                 <p>Store</p>
+                <p>Store</p>
               </Link>
             </div>
 
-            <div className="item">
+            <div className="item" onClick={scrollToTop}>
               <Link to="playstation">
                 <img src={Playstation} alt="PS5" className="ps5" />
-                 <p>Play Station</p>
+                <p>Play Station</p>
               </Link>
             </div>
 
-            <div className="item">
+            <div className="item" onClick={scrollToTop}>
               <Link to="apple">
                 <img src={Apple} alt="apple" />
-                 <p>Apple</p>
+                <p>Apple</p>
               </Link>
             </div>
           </div>
 
-          <div className="center logo" onClick={homePage}>
+          <div className="center logo" onClick={handleClick}>
             <Link to="/">
               <img src={Logo} alt="logo" />
               <h1>
@@ -86,14 +90,21 @@ toggleMenu,
           </div>
 
           <div className="right">
-            <Link to="/" className="homeWrapper">  <p>Home</p>   <img
-              src="https://img.icons8.com/ios/100/home--v1.png"
-              alt="home--v1"
-              className="homeIcon"
-            />
+            <Link to="/" className="homeWrapper" onClick={handleClick}>
+              <p>Home</p>{" "}
+              <img
+                src="https://img.icons8.com/ios/100/home--v1.png"
+                alt="home--v1"
+                className="homeIcon"
+              />
             </Link>
-            <Link to="/"> <p>About</p></Link>
-            <Link to="/"> <p>Contact</p></Link>
+            <Link to="/">
+              <p>About</p>
+            </Link>
+            <Link to="/">
+              {" "}
+              <p>Contact</p>
+            </Link>
             <img src={Search} alt="Others" />
             <img src={User} alt="Others" />
             <img src={Favorite} alt="Others" />

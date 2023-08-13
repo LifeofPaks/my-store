@@ -415,7 +415,7 @@ export const allCategory = [
 export const appleItems = [
 
   { id: 10,
-    title: "Apple Store",
+    title: "Everything Apple",
     image:  "https://www.ijunkie.com/wp-content/uploads/2021/06/Screen-Shot-2021-06-03-at-9.32.37-PM.png",
     subTitle: 'MacBook Pro 2022',
     desc: 'M2 Pro brings power to take on even more demanding projects. The up to 12‑core CPU and next‑generation Neural Engine make pro workflows fly — from sorting and editing thousands of images to running computational fluid dynamics simulations. And the up to 19‑core GPU drives a huge boost in graphics performance for both work and play.',
@@ -565,7 +565,7 @@ export const appleItems = [
 export const playstationItems = [
   {
     id: 10,
-    title: "PlayStation Store",
+    title: "Everything PlayStation",
     image: Feature1,
     subTitle: 'PlayStation 5 Console',
     desc: 'Experience an all-new generation of incredible PlayStation games. PS5 consoles are currently in stock.',
