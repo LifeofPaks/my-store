@@ -13,6 +13,10 @@ $primary-color : #000;
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body{
     font-family: 'Clicker Script', cursive;
     font-family: 'REM', sans-serif;
