@@ -9,6 +9,7 @@ import Product from "./Pages/Product/Product";
 import { useNavigate } from "react-router-dom";
 import PlayStation from "./Pages/PlayStation/PlayStation";
 import Apple from "./Pages/Apple/Apple";
+import StoreContextProvider from "./Context/StoreContextProvider";
 
 function App() {
   const [selectedImage, setSelectedImage] = useState(1);
@@ -98,6 +99,7 @@ function App() {
 
   return (
     <div className="App">
+      <StoreContextProvider>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home scrollToTop={scrollToTop}/>} />
@@ -125,6 +127,8 @@ function App() {
           />
         </Route>
       </Routes>
+      </StoreContextProvider>
+    
     </div>
   );
 }
