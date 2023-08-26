@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./App.scss";
 import { Outlet, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
@@ -9,16 +9,17 @@ import Product from "./Pages/Product/Product";
 import { useNavigate } from "react-router-dom";
 import PlayStation from "./Pages/PlayStation/PlayStation";
 import Apple from "./Pages/Apple/Apple";
-import StoreContextProvider from "./Context/StoreContextProvider";
+
 
 function App() {
+
+
   const [selectedImage, setSelectedImage] = useState(1);
   const [quantity, setQuantity] = useState(1);
   const [openCart, setOpenCart] = useState(false);
   const [isEmpty, setIsEmpty] = useState(false);
-  const [exitEmptyCart, setExitEmptyCart] = useState(false)
-  const [showMenu, setShowMenu] = useState(false)
-
+  const [exitEmptyCart, setExitEmptyCart] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const navigate = useNavigate();
 
@@ -32,46 +33,40 @@ function App() {
 
   const toggleCart = () => {
     setOpenCart(!openCart);
-    isEmpty ? setExitEmptyCart(false) : setExitEmptyCart(true)
-
+    isEmpty ? setExitEmptyCart(false) : setExitEmptyCart(true);
   };
 
   const addToCart = () => {
     setQuantity(quantity);
     setOpenCart(!openCart);
-    setIsEmpty(false)
+    setIsEmpty(false);
   };
 
-  const cartStatus = ()=>{
-    setIsEmpty(true)
-    setOpenCart(false)
-    setExitEmptyCart(false)
-  }
+  const cartStatus = () => {
+    setIsEmpty(true);
+    setOpenCart(false);
+    setExitEmptyCart(false);
+  };
 
-  
+  const homePage = () => {
+    navigate("/");
+    setExitEmptyCart(true);
+  };
 
-  const homePage = ()=>{
-    navigate('/')
-    setExitEmptyCart(true)
-  }
-
-  const toggleMenu = ()=>{
-    setShowMenu(!showMenu)
-    setExitEmptyCart(true)
-  }
- 
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+    setExitEmptyCart(true);
+  };
 
   // AUTO SCROLL TOP ON EACH PAGE
-   const scrollToTop = () => {
+  const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
-  const handleClick = ()=>{
-    scrollToTop()
-    homePage()
-  }
-
-
+  const handleClick = () => {
+    scrollToTop();
+    homePage();
+  };
 
   const Layout = () => {
     return (
@@ -79,13 +74,13 @@ function App() {
         <Navbar
           toggleCart={toggleCart}
           openCart={openCart}
-          setOpenCart={  setOpenCart}
+          setOpenCart={setOpenCart}
           cartStatus={cartStatus}
           isEmpty={isEmpty}
-          exitEmptyCart={exitEmptyCart} 
-          homePage = {homePage}
-          showMenu ={showMenu}
-          toggleMenu ={toggleMenu}
+          exitEmptyCart={exitEmptyCart}
+          homePage={homePage}
+          showMenu={showMenu}
+          toggleMenu={toggleMenu}
           scrollToTop={scrollToTop}
           handleClick={handleClick}
         />
@@ -97,38 +92,41 @@ function App() {
     );
   };
 
+
   return (
     <div className="App">
-      <StoreContextProvider>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home scrollToTop={scrollToTop}/>} />
-          <Route path="products" element={<Products scrollToTop={scrollToTop}/>} />
-          <Route path="playstation" element={<PlayStation  scrollToTop={scrollToTop}/>} />
-          <Route path="apple" element={<Apple   scrollToTop={scrollToTop}/>} />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home scrollToTop={scrollToTop} />} />
+            <Route
+              path="products"
+              element={<Products scrollToTop={scrollToTop} />}
+            />
+            <Route
+              path="playstation"
+              element={<PlayStation scrollToTop={scrollToTop} />}
+            />
+            <Route path="apple" element={<Apple scrollToTop={scrollToTop} />} />
 
-          <Route
-            path="/products/:id"
-            element={
-              <Product
-                selectedImage={selectedImage}
-                setSelectedImage={setSelectedImage}
-                quantity={quantity}
-                setQuantity={setQuantity}
-                increase={increase}
-                decrease={decrease}
-                addToCart={addToCart}
-                isEmpty = {isEmpty}
-                setIsEmpty = {setIsEmpty}
-                scrollToTop={scrollToTop}
-              />
-              
-            }
-          />
-        </Route>
-      </Routes>
-      </StoreContextProvider>
-    
+            <Route
+              path="/products/:id"
+              element={
+                <Product
+                  selectedImage={selectedImage}
+                  setSelectedImage={setSelectedImage}
+                  quantity={quantity}
+                  setQuantity={setQuantity}
+                  increase={increase}
+                  decrease={decrease}
+                  addToCart={addToCart}
+                  isEmpty={isEmpty}
+                  setIsEmpty={setIsEmpty}
+                  scrollToTop={scrollToTop}
+                />
+              }
+            />
+          </Route>
+        </Routes>
     </div>
   );
 }
